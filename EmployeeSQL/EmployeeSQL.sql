@@ -99,7 +99,8 @@ AND last_name LIKE 'B%'
 
 -- Task #6 List each employee in the Sales department, 
 -- including their employee number, last name, and first name.
-SELECT departments.dept_name, 
+SELECT dept_emp.emp_no, 
+departments.dept_name, 
 employees.last_name, 
 employees.first_name
 FROM dept_emp
